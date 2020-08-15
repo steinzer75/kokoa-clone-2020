@@ -1,0 +1,64 @@
+/*이것은 user-component, 즉, 사진과 타이틀, 부연설명이 된 요소를 돌려쓰기 위해
+만든 기본*/
+
+/*.user-component {
+  display: flex;
+}
+이건 user-component 아래 있는 user-component__column 두개가 적용된 것, 아래에 적용되어 있음
+*/
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component {
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.user-component__avatar {
+  width: 78px;
+  height: 78px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.user-component__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.user-component__subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+  width: 93px;
+  height: 93px;
+}
+
+.user-component__avatar--sm {
+  width: 62px;
+  height: 62px;
+  border-radius: 23px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 300;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  margin-bottom: 12px;
+  display: block;
+}
